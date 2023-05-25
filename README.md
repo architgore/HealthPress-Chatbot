@@ -1,1 +1,1 @@
-# Mental-Health-Chatbot
+# Health-Chatbot
