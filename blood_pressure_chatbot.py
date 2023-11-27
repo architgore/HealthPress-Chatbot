@@ -6,21 +6,21 @@ class BloodPressureChatbot:
         self.master = master
         master.title("Blood Pressure Chatbot")
 
-        # Set the background color to red
-        master.configure(bg="red")
+        # Set the background color to a soothing color
+        master.configure(bg="#87CEEB")  # Sky Blue
 
         # Create widgets
-        self.label = tk.Label(master, text="Enter your blood pressure (mmHg):", bg="red", fg="white")
-        self.label.pack()
+        self.label = tk.Label(master, text="Enter your blood pressure (mmHg):", bg="#87CEEB", fg="white", font=("Helvetica", 14))
+        self.label.pack(pady=10)
 
-        self.input_entry = tk.Entry(master)
-        self.input_entry.pack()
+        self.input_entry = tk.Entry(master, font=("Helvetica", 12))
+        self.input_entry.pack(pady=10)
 
-        self.output_text = scrolledtext.ScrolledText(master, width=40, height=10, bg="white")
-        self.output_text.pack()
+        self.output_text = scrolledtext.ScrolledText(master, width=40, height=10, bg="white", font=("Helvetica", 12))
+        self.output_text.pack(pady=10)
 
-        self.button = tk.Button(master, text="Get Recommendation", command=self.get_recommendation, bg="white")
-        self.button.pack()
+        self.button = tk.Button(master, text="Get Recommendation", command=self.get_recommendation, bg="#32CD32", fg="white", font=("Helvetica", 12))
+        self.button.pack(pady=10)
 
     def get_recommendation(self):
         # Get the user's input
@@ -30,17 +30,17 @@ class BloodPressureChatbot:
             # Convert input to integer
             blood_pressure = int(user_input)
 
-            # Provide a simple recommendation
+            # Provide a more detailed recommendation
             if blood_pressure < 90:
-                recommendation = "Low blood pressure. Please consult with a healthcare professional."
+                recommendation = "Low blood pressure. It's essential to stay hydrated and consume a balanced diet. If symptoms persist, consult a healthcare professional."
             elif 90 <= blood_pressure <= 120:
-                recommendation = "Normal blood pressure. Keep up the good work!"
+                recommendation = "Normal blood pressure. Keep up the good work! Maintain a healthy lifestyle with regular exercise and a balanced diet."
             elif 121 <= blood_pressure <= 139:
-                recommendation = "Prehypertension. Consider lifestyle changes and monitor regularly."
+                recommendation = "Prehypertension. Consider reducing salt intake, increasing physical activity, and managing stress. Regular monitoring is crucial."
             elif 140 <= blood_pressure <= 159:
-                recommendation = "Stage 1 hypertension. Consult with a healthcare professional."
+                recommendation = "Stage 1 hypertension. Focus on lifestyle changes, including a heart-healthy diet, exercise, and stress management. Consult with a healthcare professional."
             else:
-                recommendation = "Stage 2 hypertension. Seek immediate medical attention!"
+                recommendation = "Stage 2 hypertension. Seek immediate medical attention! Follow medical advice, take prescribed medications, and make significant lifestyle changes."
 
             # Display the recommendation in the output text area
             self.output_text.insert(tk.END, f"Your blood pressure is {blood_pressure} mmHg.\n")
@@ -63,3 +63,4 @@ chatbot = BloodPressureChatbot(root)
 
 # Run the application
 root.mainloop()
+
