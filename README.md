@@ -10,16 +10,16 @@ Make sure you have Python installed on your machine.
 
 ### How to Use
 
-Launch the application by running python chatbot.py, and a window will appear with an input field for entering your blood pressure.
+1. Launch the application by running python chatbot.py, and a window will appear with an input field for entering your blood pressure.
 
-Enter your blood pressure in mmHg and click the "Get Recommendation" button.
+2. Enter your blood pressure in mmHg and click the "Get Recommendation" button.
 
-The chatbot will provide a recommendation based on the entered blood pressure.
+3. The chatbot will provide a recommendation based on the entered blood pressure.
 
 ### Features
 
-User Input Handling: Validates and processes user input for blood pressure.
+1. User Input Handling: Validates and processes user input for blood pressure.
 
-Recommendation Logic: Provides recommendations based on different blood pressure ranges.
+2. Recommendation Logic: Provides recommendations based on different blood pressure ranges.
 
-Tkinter GUI: Utilizes Tkinter for creating a simple and user-friendly graphical interface.
+3. Tkinter GUI: Utilizes Tkinter for creating a simple and user-friendly graphical interface.
