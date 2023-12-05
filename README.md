@@ -17,9 +17,12 @@ Make sure you have Python installed on your machine.
 
 ### Running the Code
 
-Run python chatbot.py
+ ```bash
 
-### How to Use
+   python chatbot.py
+
+
+###How to Use
 
 Launch the application, and a window will appear with an input field for entering your blood pressure.
 
