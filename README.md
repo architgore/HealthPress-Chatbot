@@ -8,16 +8,18 @@ Welcome to the Blood Pressure Chatbot project! This simple Tkinter-based chatbot
 
 Make sure you have Python installed on your machine.
 
-### Installation
+### How to Use
 
-1. Clone the repository:
+Launch the application by running python chatbot.py, and a window will appear with an input field for entering your blood pressure.
 
-   ```bash
-   git clone https://github.com/your-username/blood-pressure-chatbot.git
+Enter your blood pressure in mmHg and click the "Get Recommendation" button.
 
-### Running the Code
+The chatbot will provide a recommendation based on the entered blood pressure.
 
-   python chatbot.py
+### Features
 
+User Input Handling: Validates and processes user input for blood pressure.
 
+Recommendation Logic: Provides recommendations based on different blood pressure ranges.
 
+Tkinter GUI: Utilizes Tkinter for creating a simple and user-friendly graphical interface.
